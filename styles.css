@@ -16,8 +16,9 @@ nav {
 /* STYLING FOR HEADER */
 header {
   background: #a2546e;
-  height: 20vh;
+  height: 11.2em;
 }
+
  h1 {
    font-size: 2.2em;
    font-weight: lighter;
@@ -26,19 +27,23 @@ header {
 
 
 /* STYLING FOR NAVIGATION W/IN HEADER */
-
 nav ul li {
   display: inline-block;
   padding-top: 2.3%;
 }
 
 nav ul li {
-  border: 5px solid #a2546e;
-  padding-right: 2%;
+  border-bottom: 5px solid #a2546e;
+  padding-right: 5%;
+  margin-right: 2%;
+}
+
+li {
+  text-align: center;
 }
 
 /* HIGHLIGHT NAV SELECTION */
-
 .highlight {
-  border-bottom: 5px solid #a2546e;
+  border-bottom: 5px solid 	#edd3db;
+  width: 2%;
 }
