@@ -16,29 +16,55 @@ nav {
 /* STYLING FOR HEADER */
 header {
   background: #a2546e;
-  height: 20vh;
+  height: 9.5em;
 }
+
  h1 {
    font-size: 2.2em;
    font-weight: lighter;
    padding-top: 3%;
+   margin-bottom: 2%;
  }
 
 
 /* STYLING FOR NAVIGATION W/IN HEADER */
+ nav p {
+   border-bottom: 5px solid #a2546e;
+   cursor: pointer;
+   display: inline;
+   margin-top: 5%;
+   margin-right: 3%;
+ }
 
-nav ul li {
-  display: inline-block;
-  padding-top: 2.3%;
-}
-
-nav ul li {
-  border: 5px solid #a2546e;
-  padding-right: 2%;
-}
+ nav p:hover {
+  border-bottom: 5px solid 	#edd3db;
+ }
 
 /* HIGHLIGHT NAV SELECTION */
-
 .highlight {
-  border-bottom: 5px solid #a2546e;
+  border-bottom: 5px solid 	#edd3db;
+  width: 2%;
+}
+
+/* CONTENT THAT APPEARS ON PAGE AFTER INITIAL LOAD */
+
+section {
+  background: #e9bdcb;
+  color: black;
+  height: 4em;
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 30em;
+}
+
+section img {
+  height: 2em;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: auto;
+}
+
+section p {
+  margin-left: 10%;
+  display: inline;
 }
