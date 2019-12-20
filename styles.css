@@ -47,7 +47,6 @@ header {
 }
 
 /* CONTENT THAT APPEARS ON PAGE AFTER INITIAL LOAD */
-
 section {
   background: #e9bdcb;
   color: black;
@@ -65,6 +64,6 @@ section img {
 }
 
 section p {
-  margin-left: 10%;
   display: inline;
+  margin-left: 10%;
 }
