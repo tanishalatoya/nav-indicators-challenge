@@ -45,3 +45,26 @@ header {
   border-bottom: 5px solid 	#edd3db;
   width: 2%;
 }
+
+/* CONTENT THAT APPEARS ON PAGE AFTER INITIAL LOAD */
+
+section {
+  background: #e9bdcb;
+  color: black;
+  height: 4em;
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 30em;
+}
+
+section img {
+  height: 2em;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: auto;
+}
+
+section p {
+  margin-left: 10%;
+  display: inline;
+}
