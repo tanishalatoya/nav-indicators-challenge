@@ -49,8 +49,9 @@ function highlightSelection() {
 // }
 
 
-// Refactor this to use a variable to pull in teh various messages.
 
+
+// Refactor this to use a variable to pull in teh various messages.
 function displayInformation(event) {
   var main = document.querySelector('main');
 
