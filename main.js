@@ -1,7 +1,9 @@
 var navigationBar = document.querySelector('nav');
-var main = document.querySelector('main');
+
 
 navigationBar.addEventListener('click', highlightSelection);
+navigationBar.addEventListener('click', displayInformation);
+
 
 function highlightSelection(event) {
     var allCourses = document.querySelector('#all-courses');
@@ -12,13 +14,13 @@ function highlightSelection(event) {
     if (event.target.id === 'all-courses') {
       allCourses.classList.add ('highlight');
       collections.classList.remove('highlight');
-      whishlist.classList.remove('highlight');
+      wishlist.classList.remove('highlight');
       archived.classList.remove('highlight');
 
     } else if (event.target.id === 'collections') {
       collections.classList.add ('highlight');
       allCourses.classList.remove('highlight');
-      whishlist.classList.remove('highlight');
+      wishlist.classList.remove('highlight');
       archived.classList.remove('highlight');
 
     } else if (event.target.id === 'wishlist') {
@@ -33,4 +35,35 @@ function highlightSelection(event) {
       collections.classList.remove('highlight');
       wishlist.classList.remove('highlight');
     }
+}
+
+function displayInformation(event) {
+  var main = document.querySelector('main');
+
+
+  if (event.target.id === 'all-courses') {
+    main.innerHTML =
+    `<section>
+      <img src="open-magazine.svg" alt="book icon">
+      <p>We have a wide range of courses to choose from!</p>
+    </section>`
+
+  } else if (event.target.id === 'collections') {
+    main.innerHTML =
+    `<section>
+      <p>Another chunk of text goes here related to collections!</p>
+    </section>`
+
+  } else if(event.target.id === 'wishlist') {
+    main.innerHTML =
+    `<section>
+      <p>Courses I'd love to take in my free time go here!</p>
+    </section>`
+
+  } else {
+  main.innerHTML =
+  `<section>
+    <p>Courses I've already taken go here!</p>
+  </section>`
+  }
 }
